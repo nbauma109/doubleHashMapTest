@@ -20,16 +20,12 @@ public class JDKDoubleMap implements IDoubleDoubleMap {
 
 	@Override
 	public Double put(double key, double value) {
-		Double oldVal = map.get(key);
-		map.put(key, value);
-		return oldVal;
+		return map.put(key, value);
 	}
 
 	@Override
 	public Double remove(double key) {
-		Double oldVal = map.get(key);
-		map.remove(key);
-		return oldVal;
+		return map.remove(key);
 	}
 
 	@Override
